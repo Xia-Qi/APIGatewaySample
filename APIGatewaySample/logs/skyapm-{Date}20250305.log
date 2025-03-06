@@ -1,0 +1,26 @@
+2025-03-05 17:08:17.984 +08:00 [api-gateway] [Information] SkyApm.InstrumentStartup : Initializing ...
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Service.LogReportService : Loaded instrument service [SkyApm.Service.LogReportService].
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2025-03-05 17:08:17.996 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.ConnectService].
+2025-03-05 17:08:18.088 +08:00 [api-gateway] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2025-03-05 17:08:18.109 +08:00 [api-gateway] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2025-03-05 17:08:18.109 +08:00 [api-gateway] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2025-03-05 17:08:18.110 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[127.0.0.1:11800].
+2025-03-05 17:08:18.683 +08:00 [api-gateway] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Grpc.Net.Client].
+2025-03-05 17:08:18.980 +08:00 [api-gateway] [Information] SkyApm.Service.RegisterService : Reported Service Instance Properties[Service=api-gateway,InstanceId=87dc5c9fcea84e029945675f45fb36a4@192.168.9.60].
+2025-03-05 17:08:21.047 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0367299s
+2025-03-05 17:08:24.015 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0074579s
+2025-03-05 17:08:27.024 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0229822s
+2025-03-05 17:08:33.016 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0182409s
+2025-03-05 17:08:36.007 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0099038s
+2025-03-05 17:08:39.010 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0109325s
+2025-03-05 17:08:45.025 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0209520s
+2025-03-05 17:08:48.023 +08:00 [api-gateway] [Information] SkyApm.Service.PingService : Ping server @2025-03-05 09:08:48 +00:00
+2025-03-05 17:08:48.028 +08:00 [api-gateway] [Information] SkyApm.Service.CLRStatsService : Report CLR Stats. CPU UsagePercent 0 GenCollectCount 0 0 0 13M ThreadPool 32765 32767 1000 1000
+2025-03-05 17:08:54.009 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0108223s
+2025-03-05 17:09:00.008 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 1 trace segment. cost: 00:00:00.0081978s
+2025-03-05 17:09:06.016 +08:00 [api-gateway] [Information] SkyApm.Transport.Grpc.V8.SegmentReporter : Report 2 trace segment. cost: 00:00:00.0088364s

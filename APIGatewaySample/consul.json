@@ -1,0 +1,8 @@
+{
+  "Consul": {
+    "consulAddress": "http://localhost:8500", //consul的访问地址
+    "serviceName": "api-gateway", //服务名称，这个要跟Ocelot 使用时候，这个名字要一致
+    "currentIp": "localhost", //本地IP
+    "currentPort": "8000" //应用端口中
+  }
+}

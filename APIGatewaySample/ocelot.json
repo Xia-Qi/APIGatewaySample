@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/{abc}",
+      "DownstreamScheme": "http",
+      "ServiceName": "service1",
+      "LoadBalancerOptions": { "Type": "RoundRobin" },
+      "UpstreamPathTemplate": "/service1/{abc}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "ReRoutesCaseSensitive": false
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:8000",
+    "ServiceDiscoveryProvider": {
+      "Scheme": "http",
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul",
+      "ConfigurationKey": "node-1"
+    },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Trace"
+      }
+    }
+  }
+}

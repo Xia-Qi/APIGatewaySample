@@ -1,0 +1,54 @@
+﻿{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.File", "Serilog.Sinks.Async", "Serilog.Sinks.Console" ],
+    "MinimumLevel": {
+      "Default": "Verbose",
+      "Override": {
+        "Microsoft": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Async",
+        "Args": {
+          "configure": [
+            {
+              "Name": "File",
+              "Args": {
+                "path": "logs\\log-{date}.txt",
+                "rollingInterval": "Hour",
+                "restrictedToMinimumLevel": "Verbose"
+              }
+
+            }
+          ]
+        }
+
+      },
+      {
+        "Name": "Console",
+        "Args": {
+          "restrictedToMinimumLevel": "Verbose"
+          //"formatter": "Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact"
+        }
+      },
+      {
+        "Name": "Elasticsearch",
+        "Args": {
+          "nodeUris": "http://localhost:9200", // Elasticsearch 地址
+          "indexFormat": "logs-{0:yyyy.MM.dd}", // 索引名称格式
+          "autoRegisterTemplate": true, // 自动创建索引模板
+          "numberOfShards": 1, // 分片数
+          "numberOfReplicas": 1, // 副本数
+          "bufferBaseFilename": "logs\\elasticsearch-buffer", // 缓存日志到本地
+          "batchPostingLimit": 50, // 每次发送 50 条日志
+          "connectionTimeout": 5 // 连接超时时间为 5 秒
+        }
+      }
+    ],
+    "Enrich": [ "WithMachineName", "WithThreadId", "FromLogContext" ],
+    "Properties": {
+      "ApplicationName": "APIGateway"
+    }
+  }
+}
