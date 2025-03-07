@@ -1,5 +1,4 @@
 # APIGateWaySample
-ca7c3eeca4a4baf6e2c0257e289f0733
 **Ocelot + Consul + Skywalking**
 ## 简介
 系统设计图
