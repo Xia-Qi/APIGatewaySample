@@ -2,7 +2,7 @@
 **Ocelot + Consul + Skywalking**
 ## 简介
 系统设计图
-![System Design Diagram](assets/SystemDesign.png)
+![System Design Diagram](https://gitee.com/qx918/apigateway-sample/raw/master/assets/SystemDesign.png)
 ### 网关
 API网关（Gateway）是一个服务器，是系统的唯一入口。从面向对象设计的角度看，它与外观模式类似。API网关封装了系统内部架构，为每个客户端提供一个定制的API。它可能还具有其它职责，如身份验证、监控、负载均衡、缓存、限流等。
 
@@ -124,9 +124,9 @@ builder.Services.AddSkyApmExtensions();
 全部代码见： https://gitee.com/qx918/apigateway-sample 或 https://github.com/Xia-Qi/APIGatewaySample
 
 ## 运行效果图
-![Consul service list](assets/consul_services.png)
-![Consul service detail](assets/service_detail.png)
-![Skywalking request trace](assets/sky_get.png)
+![Consul service list](https://gitee.com/qx918/apigateway-sample/raw/master/assets/consul_services.png)
+![Consul service detail](https://gitee.com/qx918/apigateway-sample/raw/master/assets/service_detail.png)
+![Skywalking request trace]([assets/sky_get.png](https://gitee.com/qx918/apigateway-sample/raw/master/assets/sky_get.png))
 
 ## License
 
